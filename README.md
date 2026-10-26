@@ -6,7 +6,7 @@
 - **Kelompok:** B03
 - **Mata Kuliah:** Pemrograman Web Lanjut
 
-**Mohon Izin Sebelumnya. Readme ini Saya meminta bantuan Ai untuk membantu saya Menyusun Penulisannya Agar memudahkan Saya Menjelaskan Program Saya**
+Catatan: Dalam penyusunan dokumentasi README ini, saya menggunakan bantuan AI untuk membantu merapikan penulisan dan mempermudah penjelasan mengenai program yang saya kerjakan.
 ---
 
 ## 1. Deskripsi Proyek
