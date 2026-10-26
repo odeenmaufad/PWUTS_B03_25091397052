@@ -5,7 +5,7 @@
 - **NIM:** 25091397052
 - **Kelompok:** B03
 - **Mata Kuliah:** Pemrograman Web Lanjut
-
+Mohon Izin Sebelumnya. Readme ini Saya meminta bantuan Ai untuk membantu saya Menyusun Penulisannya Agar memudahkan Saya Menjelaskan Program Saya
 ---
 
 ## 1. Deskripsi Proyek
