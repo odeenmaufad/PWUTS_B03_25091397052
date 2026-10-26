@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="bgGradPria" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfdf5"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <linearGradient id="peciGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="80" cy="80" r="76" fill="url(#bgGradPria)" stroke="#10b981" stroke-width="3"/>
+  
+  <!-- Torso & Islamic Batik / Collared Shirt -->
+  <path d="M30,150 C30,120 52,112 80,112 C108,112 130,120 130,150 Z" fill="#047857"/>
+  <!-- Collar & Tie/Inner -->
+  <polygon points="80,112 70,132 90,132" fill="#ffffff"/>
+  <polygon points="80,118 75,148 85,148" fill="#fbbf24"/>
+
+  <!-- Neck -->
+  <rect x="72" y="94" width="16" height="20" fill="#fbd5b5" rx="3"/>
+
+  <!-- Face Head -->
+  <ellipse cx="80" cy="74" rx="26" ry="30" fill="#fed7aa"/>
+
+  <!-- Ears -->
+  <circle cx="53" cy="75" r="6" fill="#fed7aa"/>
+  <circle cx="107" cy="75" r="6" fill="#fed7aa"/>
+
+  <!-- Eyes & Eyebrows -->
+  <path d="M66,65 Q72,63 76,66" stroke="#451a03" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M84,66 Q88,63 94,65" stroke="#451a03" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="71" cy="72" r="3" fill="#1e293b"/>
+  <circle cx="89" cy="72" r="3" fill="#1e293b"/>
+
+  <!-- Smile & Nose -->
+  <path d="M80,73 L80,78 L78,80" stroke="#d97706" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M72,85 Q80,92 88,85" stroke="#9a3412" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- Neat Islamic Peci / Songkok -->
+  <path d="M52,60 C52,42 62,36 80,36 C98,36 108,42 108,60 Z" fill="url(#peciGrad)"/>
+  <!-- Gold trim band on Peci -->
+  <path d="M52,58 Q80,62 108,58" stroke="#f59e0b" stroke-width="2.5" fill="none"/>
+</svg>

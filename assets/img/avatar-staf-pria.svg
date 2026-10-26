@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="bgGradStafP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="80" cy="80" r="76" fill="url(#bgGradStafP)" stroke="#0ea5e9" stroke-width="3"/>
+
+  <!-- Torso / Office Shirt -->
+  <path d="M30,150 C30,122 52,112 80,112 C108,112 130,122 130,150 Z" fill="url(#shirtGrad)"/>
+  
+  <!-- White Collar -->
+  <polygon points="80,112 66,128 80,125 94,128" fill="#ffffff"/>
+  
+  <!-- Staff ID Card Lanyard -->
+  <path d="M68,112 L76,145 L84,145 L92,112" stroke="#f59e0b" stroke-width="2.5" fill="none"/>
+  <rect x="73" y="140" width="14" height="18" rx="2" fill="#ffffff" stroke="#0284c7" stroke-width="1"/>
+  <rect x="75" y="143" width="10" height="3" fill="#0284c7"/>
+
+  <!-- Neck -->
+  <rect x="72" y="94" width="16" height="20" fill="#fed7aa" rx="2"/>
+
+  <!-- Head -->
+  <ellipse cx="80" cy="74" rx="26" ry="29" fill="#fed7aa"/>
+
+  <!-- Hair -->
+  <path d="M54,65 C54,40 68,34 80,34 C94,34 106,40 106,65 C101,52 90,46 80,48 C70,46 59,52 54,65 Z" fill="#1e293b"/>
+
+  <!-- Ears -->
+  <circle cx="53" cy="75" r="5" fill="#fed7aa"/>
+  <circle cx="107" cy="75" r="5" fill="#fed7aa"/>
+
+  <!-- Modern Spectacles / Glasses (giving IT / Administrator vibe) -->
+  <rect x="63" y="66" width="14" height="11" rx="3" fill="none" stroke="#334155" stroke-width="2"/>
+  <rect x="83" y="66" width="14" height="11" rx="3" fill="none" stroke="#334155" stroke-width="2"/>
+  <line x1="77" y1="71" x2="83" y2="71" stroke="#334155" stroke-width="2"/>
+  <line x1="59" y1="70" x2="63" y2="70" stroke="#334155" stroke-width="1.5"/>
+  <line x1="97" y1="70" x2="101" y2="70" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Eyes behind glasses -->
+  <circle cx="70" cy="71" r="2.5" fill="#1e293b"/>
+  <circle cx="90" cy="71" r="2.5" fill="#1e293b"/>
+
+  <!-- Smile -->
+  <path d="M80,77 L80,81 L78,82" stroke="#d97706" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M73,87 Q80,93 87,87" stroke="#9a3412" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

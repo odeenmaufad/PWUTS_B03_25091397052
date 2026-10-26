@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Direktori Resmi Guru dan Tenaga Kependidikan SD Islam Al-Hikmah. Sistem informasi berbasis web interaktif, cepat, dan aman menggunakan Ajax Fetch API dan PHP PDO.">
+    <title>Direktori Guru & Staf - SD Islam Al-Hikmah</title>
+
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" href="assets/img/Al-HikmahIslamicSchoolEmblem.png">
+
+    <!-- Vanilla CSS Design System -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================================================================
+         HEADER & NAVIGASI SITUS (Sticky Glassmorphic Header)
+         ========================================================================= -->
+    <header class="site-header" id="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand" data-view="beranda" aria-label="SD Islam Al-Hikmah">
+                <img src="assets/img/Al-HikmahIslamicSchoolEmblem.png" alt="Logo SD Islam Al-Hikmah" class="brand-logo"
+                    width="46" height="46">
+                <div class="brand-text">
+                    <span class="brand-title">SD Islam Al-Hikmah</span>
+                    <span class="brand-subtitle">Direktori Guru & Tenaga Kependidikan</span>
+                </div>
+            </a>
+
+            <!-- Tombol Hamburger Mobile -->
+            <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Buka Menu Navigasi"
+                aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Menu Navigasi Utama -->
+            <nav role="navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link active" data-view="beranda" id="nav-beranda">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg>
+                            Beranda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="guru-staf.php" class="nav-link" data-view="guru-staf" id="nav-direktori">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                            Direktori Guru & Staf
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tambah-guru.php" class="nav-link" data-view="tambah-guru" id="nav-tambah">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="8" x2="12" y2="16" />
+                                <line x1="8" y1="12" x2="16" y2="12" />
+                            </svg>
+                            Tambah Guru/Staf
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =========================================================================
+         AREA KONTEN UTAMA (Tempat Fragmen Ajax B & C Dimuat Dinamis)
+         ========================================================================= -->
+    <main id="main-content" role="main" aria-live="polite">
+
+        <!-- SECTION 1: HERO SECTION BERANDA -->
+        <section class="hero-section" id="hero-beranda">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-tag">
+                            <span>✨</span> Ahlan wa Sahlan di Portal Resmi
+                        </div>
+                        <h1 class="hero-title">
+                            Pusat Informasi Pendidik & Staf <span>SD Islam Al-Hikmah</span>
+                        </h1>
+                        <p class="hero-lead">
+                            Mewujudkan generasi Qur'ani yang berkarakter mulia, cerdas, dan mandiri dengan bimbingan
+                            dewan guru berdedikasi tinggi serta tenaga kependidikan profesional.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="guru-staf.php" data-view="guru-staf" class="btn btn-gold">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                </svg>
+                                Jelajahi Direktori Pegawai
+                            </a>
+                            <a href="tambah-guru.php" data-view="tambah-guru" class="btn btn-outline-white">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                Tambah Guru / Staf Baru
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-num">Terakreditasi A</span>
+                                <span class="stat-label">BAN-S/M Unggul</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">100%</span>
+                                <span class="stat-label">Dedikasi Nilai Islami</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">Real-Time</span>
+                                <span class="stat-label">Pembaruan Ajax Cepat</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-media">
+                        <img src="assets/img/hero-school.svg"
+                            alt="Ilustrasi Gedung dan Suasana Akademik SD Islam Al-Hikmah" width="520" height="346">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: RINGKASAN FITUR UTAMA -->
+        <section class="features-section" id="fitur-unggulan">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-kicker">Keunggulan Aplikasi</span>
+                    <h2 class="section-title">Fitur Utama Direktori Sekolah</h2>
+                    <p class="section-desc">Aplikasi web modern yang dirancang untuk transparansi dan kemudahan
+                        pengelolaan data pendidik tanpa membebani server.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Navigasi Ajax Cepat</h3>
+                        <p class="feature-text">Perpindahan antar halaman Direktori dan Tambah Data menggunakan Fetch
+                            API secara asinkron tanpa reload seluruh halaman, didukung animasi loading yang halus.</p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Pencarian & Filter Instan</h3>
+                        <p class="feature-text">Temukan dewan guru atau staf kependidikan berdasarkan nama maupun mata
+                            pelajaran/jabatan secara instan dan responsif di sisi peramban.</p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Keamanan & Validasi Ganda</h3>
+                        <p class="feature-text">Formulir divalidasi ganda di peramban dan server PHP. Penyimpanan basis
+                            data menggunakan PDO Prepared Statements dan escaping htmlspecialchars untuk mencegah SQLi
+                            serta XSS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================================================================
+         FOOTER SITUS
+         ========================================================================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <img src="assets/img/Al-HikmahIslamicSchoolEmblem.png" alt="Logo Sekolah" width="36"
+                            height="36">
+                        <span class="footer-brand-title">SD Islam Al-Hikmah</span>
+                    </div>
+                    <p class="footer-about">
+                        Lembaga pendidikan dasar Islam terpadu yang berkomitmen membentuk generasi shalih, cerdas,
+                        berkarakter Qur'ani, dan siap menyongsong masa depan.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-view="beranda">Beranda Utama</a></li>
+                        <li><a href="guru-staf.php" data-view="guru-staf">Direktori Guru & Staf</a></li>
+                        <li><a href="tambah-guru.php" data-view="tambah-guru">Tambah Pegawai Baru</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Kontak & Lokasi</h4>
+                    <div class="footer-contact-item">
+                        <span>📍</span>
+                        <span>Jl. Pendidikan Karakter No. 07, Kampus Al-Hikmah</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <span>(021) 789-0123 / 789-0124</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <span>info@alhikmah.sch.id</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SD Islam Al-Hikmah. Proyek Tugas Pemrograman Web.</p>
+                <p>Teknologi: HTML5 &bull; CSS3 &bull; Vanilla JavaScript Fetch API &bull; PHP 8 &bull; MariaDB PDO</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla Javascript Application Controller -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

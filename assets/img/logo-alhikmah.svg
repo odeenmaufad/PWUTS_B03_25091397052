@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b6e47"/>
+      <stop offset="100%" stop-color="#0c3823"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer Shield / Islamic Geometric Crest -->
+  <polygon points="50,4 88,18 88,58 50,96 12,58 12,18" fill="url(#emeraldGrad)" stroke="#f59e0b" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Inner Border -->
+  <polygon points="50,11 81,23 81,55 50,87 19,55 19,23" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="3,2" opacity="0.75"/>
+  <!-- Islamic Star at Top -->
+  <path d="M50,18 L52,24 L58,24 L53,28 L55,34 L50,30 L45,34 L47,28 L42,24 L48,24 Z" fill="url(#goldGrad)"/>
+  <!-- Open Book (Symbol of Knowledge & Al-Qur'an) -->
+  <path d="M50,56 C44,51 34,50 26,52 L26,69 C34,67 44,68 50,73 C56,68 66,67 74,69 L74,52 C66,50 56,51 50,56 Z" fill="#ffffff" opacity="0.95"/>
+  <!-- Book Spine / Divider -->
+  <line x1="50" y1="56" x2="50" y2="73" stroke="#1b6e47" stroke-width="2"/>
+  <!-- Book Page Lines Left -->
+  <line x1="30" y1="58" x2="45" y2="60" stroke="#d1fae5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="30" y1="63" x2="44" y2="65" stroke="#d1fae5" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Book Page Lines Right -->
+  <line x1="55" y1="60" x2="70" y2="58" stroke="#d1fae5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="56" y1="65" x2="70" y2="63" stroke="#d1fae5" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Rays of Light -->
+  <circle cx="50" cy="44" r="5" fill="#fef08a"/>
+  <line x1="50" y1="36" x2="50" y2="39" stroke="#fef08a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="43" y1="39" x2="45" y2="41" stroke="#fef08a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="57" y1="39" x2="55" y2="41" stroke="#fef08a" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

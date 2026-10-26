@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="bgGradStafW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff"/>
+      <stop offset="100%" stop-color="#fae8ff"/>
+    </linearGradient>
+    <linearGradient id="hijabGradStaf" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="80" cy="80" r="76" fill="url(#bgGradStafW)" stroke="#0d9488" stroke-width="3"/>
+
+  <!-- Hijab Body Drape -->
+  <path d="M28,155 C30,118 55,102 80,102 C105,102 130,118 132,155 Z" fill="url(#hijabGradStaf)"/>
+  
+  <!-- Hijab Head Shape -->
+  <ellipse cx="80" cy="72" rx="36" ry="42" fill="url(#hijabGradStaf)"/>
+
+  <!-- Face Opening -->
+  <ellipse cx="80" cy="76" rx="22" ry="26" fill="#fed7aa"/>
+
+  <!-- Inner Band -->
+  <path d="M60,65 C68,58 92,58 100,65 C95,58 65,58 60,65 Z" fill="#0f172a"/>
+
+  <!-- Eyes & Eyebrows -->
+  <path d="M67,70 Q73,67 77,70" stroke="#451a03" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M83,70 Q87,67 93,70" stroke="#451a03" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="72" cy="76" r="3" fill="#1e293b"/>
+  <circle cx="88" cy="76" r="3" fill="#1e293b"/>
+  <circle cx="73" cy="75" r="1" fill="#ffffff"/>
+  <circle cx="89" cy="75" r="1" fill="#ffffff"/>
+
+  <!-- Smile & Cheeks -->
+  <path d="M80,78 L80,82 L78,84" stroke="#d97706" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <path d="M73,89 Q80,95 87,89" stroke="#be123c" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="68" cy="85" r="4" fill="#fda4af" opacity="0.4"/>
+  <circle cx="92" cy="85" r="4" fill="#fda4af" opacity="0.4"/>
+
+  <!-- Staff Badge / Lanyard clip -->
+  <rect x="75" y="112" width="10" height="15" rx="2" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="80" cy="116" r="2" fill="#0d9488"/>
+</svg>
