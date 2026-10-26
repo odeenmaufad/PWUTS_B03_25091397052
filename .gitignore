@@ -1,0 +1,14 @@
+# Konfigurasi lokal
+config.local.php
+.env
+.env.local
+.env.*.local
+
+# Log dan file sementara
+*.log
+*.tmp
+*.bak
+
+# Folder dependensi
+node_modules/
+vendor/
